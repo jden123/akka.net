@@ -54,6 +54,10 @@
     <Optimize>false</Optimize>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Akka.Hocon, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Akka.Hocon.0.1.0\lib\net45\Akka.Hocon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -152,22 +156,7 @@
     <Compile Include="Actor\Stash\UntypedActorWithUnboundedStash.cs" />
     <Compile Include="Actor\Stash\IWithBoundedStash.cs" />
     <Compile Include="Actor\Stash\IWithUnboundedStash.cs" />
-    <Compile Include="Configuration\ConfigurationException.cs" />
-    <Compile Include="Configuration\ConfigurationFactory.cs" />
-    <Compile Include="Configuration\Config.cs" />
     <Compile Include="Configuration\Hocon\AkkaConfigurationSection.cs" />
-    <Compile Include="Configuration\Hocon\CDataConfigurationElement.cs" />
-    <Compile Include="Configuration\Hocon\HoconArray.cs" />
-    <Compile Include="Configuration\Hocon\HoconConfigurationElement.cs" />
-    <Compile Include="Configuration\Hocon\HoconLiteral.cs" />
-    <Compile Include="Configuration\Hocon\HoconObject.cs" />
-    <Compile Include="Configuration\Hocon\HoconParser.cs" />
-    <Compile Include="Configuration\Hocon\HoconRoot.cs" />
-    <Compile Include="Configuration\Hocon\HoconSubstitution.cs" />
-    <Compile Include="Configuration\Hocon\HoconToken.cs" />
-    <Compile Include="Configuration\Hocon\HoconTokenizer.cs" />
-    <Compile Include="Configuration\Hocon\HoconValue.cs" />
-    <Compile Include="Configuration\Hocon\IHoconElement.cs" />
     <Compile Include="Dispatch\AbstractDispatcher.cs" />
     <Compile Include="Dispatch\ActorTaskScheduler.cs" />
     <Compile Include="Dispatch\BoundedDequeBasedMailbox.cs" />
@@ -368,7 +357,6 @@
     <Compile Include="Actor\ActorCell.DefaultMessages.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Configuration\Pigeon.conf" />
     <Compile Include="Actor\ActorCell.ReceiveTimeout.cs" />
     <Compile Include="Actor\ActorCell.Children.cs" />
     <None Include="Akka.nuspec" />

@@ -77,6 +77,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Akka.Hocon">
+      <HintPath>..\..\packages\Akka.Hocon.0.1.0\lib\net45\Akka.Hocon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="FsCheck">
       <HintPath>..\..\packages\FsCheck.0.9.4.0\lib\net40-Client\FsCheck.dll</HintPath>
       <Private>True</Private>
@@ -86,6 +90,10 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
